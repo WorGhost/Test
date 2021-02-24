@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js {
+    width: 100%;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    position: relative;
+}
+
+.img-header {
+    background: url(https://images.unsplash.com/photo-1606146485652-75b352ce408a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-header .header-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.fa-instagram {
+    width: 100%;
+    font-size: 25px;
+}
+
+.img-header .header-info h2 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: normal;
+}
+
+.img-header .header-info h2 label {
+    color: rgb(26, 65, 195);
+}
+
+.img-header .header-info hr {
+    border: none;
+    outline: none;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    width: 800px;
+    margin: 15px 0px;
+}
+
+.img-header .header-info p {
+    color: rgb(255, 255, 255);
+    font-size: 2rem
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid rgb(11, 89, 192);
+    position: relative;
+}
+
+.menu .btn-img {
+    display: none;
+}
+
+.menu .log-box {
+    margin-left: 50px;
+}
+
+.menu .log-box img {
+    width: 150px;
+    height: 60px;
+}
+
+.menu .list-container {
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+.menu .list-container .lista {
+    display: flex;
+}
+
+.menu .list-container .lista li {
+    list-style: none;
+}
+
+.menu .list-container .lista li a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    border-radius: 10px;
+    font-size: 19px;
+    padding: 5px;
+    margin: 0px 10px;
+    transition: 0.3seg;
+}
+
+.menu .list-container .lista li a.active {
+    background: rgba(87, 119, 121, 0.575);
+    color: #ffff;
+}
+
+.menu .list-container .lista li a:hover {
+    background: rgb(160, 219, 221);
+    color: rgb(255, 255, 255);
+}
+
+#main {
+    width: 100%;
+}
+
+.mission {
+    width: 100%;
+}
+
+.mission-info {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.mission-info h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+.mission-info p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.mission .spacey-img {
+    width: 100%;
+    margin: auto;
+}
+
+.mission .spacey-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transform: rotate(-3deg);
+    cursor: pointer;
+}
+
+.elon-musk {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.elon-musk .figure-img {
+    background: url(https://images.unsplash.com/photo-1485740112426-0c2549fa8c86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: soft-light;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elon-musk .figure-img h4 {
+    width: 80%;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 60px;
+}
+
+.skew-abajo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 5vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+
+.skew-arriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 5vh 100vw 0 0;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+    z-index: 10;
+}
+
+.gallery-section {
+    width: 100%;
+    margin: 150px 0px;
+}
+
+.gallery-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
+}
+
+.gallery-container .img-card {
+    overflow: hidden;
+}
+
+.gallery-container .img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gallery-container .img-card:hover img {
+    transform: scale(1.5) rotate(30deg);
+}
+
+.go-top {
+    position: fixed;
+    bottom: 30px;
+    right: 100%;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(11, 111, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p {
+    color: white;
+    font-size: 19px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.mission .mission-mis {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 150px);
+}
+
+.mission .mission-mis div h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+.mission .mission-mis div p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+.mission .partner {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.mission .partner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mission .productos h2 {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.mission .productos hr {
+    border: none;
+    outline: none;
+    height: 2px;
+    background: rgb(11, 111, 192);
+    width: 60%;
+    margin-bottom: 12px;
+}
+
+.mission .productos {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 350px);
+}
+
+.mission .productos li {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.mission .productos li:hover {
+    color: rgb(50, 108, 195);
+    font-size: 20px;
+}
+
+.mission .map {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission .map div h1 {
+    width: 80%;
+    font-size: 25px;
+    border-bottom: 3px solid rgb(56, 56, 192);
+    margin-bottom: 2rem;
+}
+
+.mission .map div h1:hover {
+    color: rgb(56, 56, 192);
+    border-bottom: 3px solid rgb(56, 56, 192);
+}
+
+.pixeles {
+    margin-bottom: 30px;
+}
+
+.contenedor {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor {
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider:nth-child(2) {
+    background: #ffffff;
+    color: #fff;
+}
+
+.contenido-slider>img {
+    width: 400px;
+}
+
+.contenido-slider>div {
+    width: 100%;
+}
+
+.contenido-slider h2 {
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contenido-slider a {
+    color: #fff;
+    background: #ffffff;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.contenido-slider:nth-child(2) a {
+    background: #fff;
+    color: #332863;
+}
+
+@media screen and (max-width:900px) {
+    .contenido-slider>img {
+        width: 250px;
+    }
+    .contenido-slider>div {
+        width: 40%;
+    }
+    .contenido-slider h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contenido-slider {
+        flex-direction: column-reverse;
+    }
+    .contenido-slider>div {
+        width: 80%;
+    }
+}
